@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import Pic from '../../pics/cvPicture.jpg'
+import Pic from '../../pics/cat-on-the-shoulder.jpg'
 import { Typography , Card, Divider, Button, BackTop} from 'antd'
 
 import Icons from '../icons'
@@ -10,7 +10,7 @@ const { Text, Paragraph } = Typography
 const { Meta } = Card
 const picStyle = {
   width:  '15em',
-  borderRadius: '50%'
+  borderRadius: '50%',
 }
 
 const textStyle = {

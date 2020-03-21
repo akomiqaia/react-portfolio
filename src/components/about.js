@@ -18,6 +18,12 @@ class About extends Component {
           <Title style={{ padding: 20 }}>ABOUT ME</Title>
           <Divider />
           <Title level={3} style={titleStyle}>EDUCATION</Title>
+          <Paragraph>
+          <Text strong>
+          Full stack development<br/>
+            <a href="https://www.foundersandcoders.com/">Founders and Coders</a>, London 2020
+          </Text>
+        </Paragraph>
         <Paragraph>
           <Text strong>
             React Developer nanodegree<br/>
