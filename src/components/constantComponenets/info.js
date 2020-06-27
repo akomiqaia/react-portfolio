@@ -36,8 +36,7 @@ class Info extends Component {
         </Card>
         <Divider />
         <Paragraph>
-          Hi I am Akaki Mikaia and i enjoye wokring on interesting projects. I am self-tought webdeveloper and recently finished courses on react, django and python.
-          With heavy focus on user experiance and intereaction
+          Hi I am Akaki Mikaia and i enjoye wokring on interesting projects. I am Founders and Coders graduate developer and currently I am working for a charity in Irland.Enthusiast of technologies that brings social impacts.
         </Paragraph>
         <Link to="/about">
           <Button size={'large'}>About Me</Button>

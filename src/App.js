@@ -19,20 +19,19 @@ class App extends Component {
         <div className="App" style={{padding: 10}}>
         
             <Nav />
-            
-            <Row style={{paddingTop: '6em'}} >
-              <Col span={6} offset={2} >
+            {/* <Row style={{paddingTop: '6em'}} > */}
+              {/* <Col span={6} offset={2} >
                 <Info />
-              </Col>
-              <Col span={14}>
+              </Col> */}
+              {/* <Col span={14}> */}
                   <Switch>
                     <Route exact path="/" component={Cont} />
                     <Route path="/about" component={About} />
                     <Route path="/projects" component={Projects} />
                     <Route path="/contact" component={Contact} />
                   </Switch>
-              </Col>
-            </Row>
+              {/* </Col> */}
+            {/* </Row> */}
             
           
           </div>

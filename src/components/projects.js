@@ -1,39 +1,42 @@
 import React, { Component } from 'react';
-import { Typography, Divider, Card, Icon, List } from 'antd'
+import { Typography, Divider, Icon, List, Space } from 'antd'
 
+import { MessageOutlined, LikeOutlined, StarOutlined } from '@ant-design/icons';
 
-import bookLogo from "../pics/book.png"
-import tricount from "../pics/tricount.png"
-import voting from "../pics/voting.png"
+import bb from "../pics/bb.png"
+import pm from "../pics/pm.png"
 
 const { Title, Text } = Typography;
 
 // action buttens under every project
+
+
 const actions = [
-  <Icon type="github" key="setting" />,
+
+ <Icon type="github" key="setting" />,
   <Icon type="edit" key="edit" />,
   <Icon type="ellipsis" key="ellipsis" />,
 ]
+
 const data = [
   {
-    title: 'Book Review Webpage',
-    alt: "screeenshot of a bookreview page",
-    src: bookLogo
+    title: "Prepare Me",
+    alt: "prepare me visual picture",
+    content: "Prepare Me is a platform created for parents with kids with autism. On the platform parents are able to create printable books from templates to tell the social stories to their kids. Prepare me is a part of Tech for Better program at FAC where I took a role of SCRUM Master",
+    src: pm,
   },
   {
-    title: 'Tricount Clone',
-    src: tricount,
+    title: 'Bechdel and Beyond',
+    alt: "prepare me visual picture",
+    content: "Bechdel and Beyond is a platform that enables users to search for films and check if the movies pass the Bechdel test and alongside display gender parity for the crew and cast. Users are also able to submit their reviews and vote for the films.",
+    src: bb
   },
-  {
-    title: 'Votting App',
-    src: voting,
-  }
 ];
 
 class Projects extends Component {
   render() {
     return (
-      <div style={{ padding: 50 }}>
+      <div style={{ padding: 50}}>
 
         <Typography style={{ padding: 20}}>
           <Title>PROJECTS</Title>
@@ -41,22 +44,27 @@ class Projects extends Component {
         </Typography>
         <Divider />
         <List
-          grid={{gutter: 10, column: 3}}
           dataSource={data}
           renderItem={item => (
-            <List.Item>
-              <Card 
-                cover={
-                  <img
-                    alt={item.alt}
-                    src={item.src}
-                  />
-                }
-                actions={actions} 
-                title={item.title}>card content</Card>
+            <List.Item
+            style={{maxWidth: "70%", marginLeft: "15%"}}
+            key={item.title}
+              // actions={actions} 
+              extra={
+                <img
+                  width={300}
+                  alt={item.alt}
+                  src={item.src}
+                />}
+            >
+              <List.Item.Meta
+                title={item.title}
+                description={item.content}
+              />
             </List.Item>
           )}
-        />
+        ></List>
+          <Divider  />
       </div>
     );
   }
